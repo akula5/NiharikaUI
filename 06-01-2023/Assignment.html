@@ -1,0 +1,25 @@
+<html>
+    <body>
+
+    </body>
+    <script>
+        let environment = "stage";
+        let sending_amount = 100;
+        let result = sending_amount;
+        if (environment == "dev") {
+            result += sending_amount * 0.10;
+        } else if (environment == "test") {
+            result += sending_amount * 0.20;
+        } else if (environment == "stage") {
+            result += sending_amount * 0.30;
+        } else if (environment == "prod") {
+            result += sending_amount * 0.05;
+        } else {
+            console.log("Invalid Environment");
+        }
+
+
+        console.log("Sending Amount:", sending_amount);
+        console.log("Final Amount based on", environment, "environment:", result);
+    </script>
+</html>

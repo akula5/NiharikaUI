@@ -1,0 +1,29 @@
+<html>
+<body>
+
+</body>
+<script>
+        let environment = "stage";
+        let sending_amount = 100;
+        let result = sending_amount;
+    switch(environment) {
+        case("dev"):
+            result += sending_amount * 0.10;
+            break;
+        case ("test"):
+            result += sending_amount * 0.20;
+            break;
+        case ("stage"):
+            result += sending_amount * 0.30;
+            break;
+        case ("prod"):
+            result += sending_amount * 0.05;
+            break;
+        default:
+            console.log("Invalid Environment");
+    }
+
+        console.log("Sending Amount: ", sending_amount);
+        console.log("Final Amount based on", environment, "environment:", result);
+</script>
+</html>
