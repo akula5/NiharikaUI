@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <script>
+            var car = {
+                model: '2023',
+                brand: 'RR',
+                engine: [{
+                    type: 'hybrid',
+                    torque: 520,
+                    engineModel: {
+                        type: "v8"
+                    }
+                }]
+            }
+            var list = [];
+            list.push(1);
+            list.push(2);
+            list.push(3);
+            list.push(4);
+            list.push(10);
+            //list.splice(3,4);
+            const ind = list.findIndex(v => v == 4);
+            log(ind);
+            log(list);
+
+            //log(car.engine[0].torque);
+            //log(car.engine[0].engineModel.type);
+            //log(car.engine[0]);
+            function log(v) {
+                console.log(v);
+            }
+        </script>
+    </body>
+</html>

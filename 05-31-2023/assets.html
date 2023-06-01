@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>My Profile</title>
+    </head>
+    <body>
+        <h1 align="center">NIHARIKA AKULA's PROFILE</h1>
+        <p id="one" align="center"></p>
+        <center><img src="C:\Users\saini\Downloads\WhatsApp Image 2023-05-31 at 11.06.07 PM.jpeg"
+        alt="MyPhoto" ></center>
+    </body>
+    <style>
+        img
+        {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            
+        }
+        body
+        {
+            border: 3px solid black;
+            border-radius: 5px;
+            background-color: gainsboro;
+        }
+    </style>
+    <script>
+            var myprofile = {
+                firstname: "Niharika",
+                lastname: "Akula ",
+                gender: "female",
+                dob: '01-05-2000',
+                email: 'niharikaak05@gmail.com',
+                phoneno: '203-668-3539',
+                zipcode: '06825',
+                university: 'Sacred Heart University',
+                hobbies: ["Dancing", "Sketching", "Singing", "Cooking", "Swimming"],
+                games: ["throwball", "cricket", "basketball"]
+
+            }
+            console.log(myprofile.hobbies[4]);
+            document.getElementById("one").innerHTML = "My last Hobby is: "+ myprofile.hobbies[4];
+    </script>
+</html>
