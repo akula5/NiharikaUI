@@ -1,0 +1,31 @@
+<html>
+<body>
+    <h1 align="center">ASSIGNMENT</h1>
+    <p align="center">Output can be seen in the console</p>
+</body>
+<script>
+
+    let environment = ["dev", "test", "stage", "prod"];
+    let sending_amount = 100;
+    for (let i = 0; i < environment.length; i++) {
+        let env = environment[i];
+        if (env == "dev") {
+            sending_amount += sending_amount * 0.1;
+            console.log("Final Amount based on", environment, "environment:", sending_amount);
+        } else if (env === "test") {
+            sending_amount += sending_amount * 0.2;
+            console.log("Final Amount based on", environment, "environment:", sending_amount);
+        } else if (env === "stage") {
+            sending_amount += sending_amount * 0.3;
+            console.log("Final Amount based on", environment, "environment:", sending_amount);
+        } else if (env === "prod") {
+            sending_amount += sending_amount * 0.05;
+            console.log("Final Amount based on", environment, "environment:", sending_amount);
+        } 
+        
+    }
+
+    
+
+</script>
+</html>

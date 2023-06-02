@@ -1,13 +1,14 @@
 <html>
 <body>
-
+    <h1 align="center">ASSIGNMENT</h1>
+    <p align="center">Output can be seen in the console</p>
 </body>
 <script>
-        let environment = "stage";
-        let sending_amount = 100;
-        let result = sending_amount;
-    switch(environment) {
-        case("dev"):
+    let environment = prompt("Enter the Environment (dev, test, stage, prod):");
+    let sending_amount = 100;
+    let result = sending_amount;
+    switch (environment) {
+        case ("dev"):
             result += sending_amount * 0.10;
             break;
         case ("test"):
@@ -23,7 +24,9 @@
             console.log("Invalid Environment");
     }
 
-        console.log("Sending Amount: ", sending_amount);
-        console.log("Final Amount based on", environment, "environment:", result);
+    console.log("Final Amount based on", environment, "environment:", result);
 </script>
 </html>
+
+
+        
