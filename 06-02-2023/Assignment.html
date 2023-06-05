@@ -1,0 +1,42 @@
+<html>
+<title> My Assignment</title>
+<body>
+    <p> Output using Functions</p>
+</body>
+<script>
+    let Hobbies = [{ h1: 'Cooking' }, {
+        h2: 'Reading', h3: 'Singing',
+        h4: 'Dancing'
+    }, {
+        h5: 'Playing', h6: 'Sketching',
+        h7: 'gardening', h8: 'Designing'
+    },
+    {
+        outdoorgames: ['Badminton', 'Throwball', 'Football'],
+        IndoorGames: ['ludo', 'Chess']
+    }]
+
+    function printHobbies() {
+        return Hobbies;
+    }
+    function addHobby(new_hobby) {
+        Hobbies.push(new_hobby);
+        return Hobbies;
+    }
+
+    function deleteHobby() {
+        for (i = 0; i <= Hobbies.length; i++) {
+            if (Hobbies[i] == "swimming") {
+                Hobbies.splice(i, 1);
+                return Hobbies;
+            }
+        }
+
+    }
+    console.log(printHobbies());
+    console.log(addHobby('swimming'));
+    console.log(deleteHobby());
+
+
+</script>
+</html>
