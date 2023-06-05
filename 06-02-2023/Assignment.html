@@ -4,17 +4,7 @@
     <p> Output using Functions</p>
 </body>
 <script>
-    let Hobbies = [{ h1: 'Cooking' }, {
-        h2: 'Reading', h3: 'Singing',
-        h4: 'Dancing'
-    }, {
-        h5: 'Playing', h6: 'Sketching',
-        h7: 'gardening', h8: 'Designing'
-    },
-    {
-        outdoorgames: ['Badminton', 'Throwball', 'Football'],
-        IndoorGames: ['ludo', 'Chess']
-    }]
+    let Hobbies = ['Cooking', 'Dancing', 'Sketching', 'Singing'];
 
     function printHobbies() {
         return Hobbies;
@@ -26,7 +16,7 @@
 
     function deleteHobby() {
         for (i = 0; i <= Hobbies.length; i++) {
-            if (Hobbies[i] == "swimming") {
+            if (Hobbies[i] == "Swimming") {
                 Hobbies.splice(i, 1);
                 return Hobbies;
             }
@@ -34,7 +24,7 @@
 
     }
     console.log(printHobbies());
-    console.log(addHobby('swimming'));
+    console.log(addHobby('Swimming'));
     console.log(deleteHobby());
 
 
