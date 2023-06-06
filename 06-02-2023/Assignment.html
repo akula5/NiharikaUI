@@ -4,28 +4,30 @@
     <p> Output using Functions</p>
 </body>
 <script>
-    let Hobbies = ['Cooking', 'Dancing', 'Sketching', 'Singing'];
+    let myHobbies = ['Cooking', 'Dancing', 'Sketching', 'Singing'];
         
 
-    function printHobbies() {
-        return Hobbies;
+    function displayHobbies() {
+        return myHobbies;
     }
     function addHobby(new_hobby) {
-        Hobbies.push(new_hobby);
-        return Hobbies;
+        myHobbies.push(new_hobby);
+        return myHobbies;
     }
 
     function deleteHobby() {
-        for (i = 0; i <= Hobbies.length; i++) {
-            if (Hobbies[i] == "Swimming") {
-                Hobbies.splice(i, 1);
-                return Hobbies;
+        for (i = 0; i <= myHobbies.length; i++) {
+            if (myHobbies[i] == "Playing") {
+                myHobbies.splice(i, 1);
+                i--;
             }
         }
+        return myHobbies;
+               
 
     }
-    console.log(printHobbies());
-    console.log(addHobby('Swimming'));
+    console.log(displayHobbies());
+    console.log(addHobby("Playing"));
     console.log(deleteHobby());
 
 
