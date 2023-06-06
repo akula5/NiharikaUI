@@ -5,7 +5,10 @@
 </body>
 <script>
     let myHobbies = ['Cooking', 'Dancing', 'Sketching', 'Singing'];
+<<<<<<< HEAD
         
+=======
+>>>>>>> 0b242454cc73e4ece6423787564815404eb7aed9
 
     function displayHobbies() {
         return myHobbies;
@@ -17,6 +20,7 @@
 
     function deleteHobby() {
         for (i = 0; i <= myHobbies.length; i++) {
+<<<<<<< HEAD
             if (myHobbies[i] == "Playing") {
                 myHobbies.splice(i, 1);
                 i--;
@@ -28,6 +32,17 @@
     }
     console.log(displayHobbies());
     console.log(addHobby("Playing"));
+=======
+            if (myHobbies[i] == "Swimming") {
+                myHobbies.splice(i, 1);
+                return myHobbies;
+            }
+        }
+
+    }
+    console.log(displayHobbies());
+    console.log(addHobby('Swimming'));
+>>>>>>> 0b242454cc73e4ece6423787564815404eb7aed9
     console.log(deleteHobby());
 
 
