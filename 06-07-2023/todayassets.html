@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>My Profile Information</title>
+    <body style="text-align: center;background-color: lightblue;">
+        <h1 style="text-align: center;text-decoration: dashed;">MY PROFILE INFORMATION IN DOM </h1>
+        <div id="first" style="color: crimson; text-align: center;">
+            First Name: <input type="text" id="fname" name="fname"><br><br>
+            Last Name:<input type="text" id="lname" name="lname"><br><br>
+            Email Address:<input type="email" id="email" name="email"><br><br>
+            Date of Birth:<input type="date" id="dob" name="dob"><br><br>
+            Phone Number: <input type="number" id="Pno" name="Pno"><br><br>
+            Gender: <input type="text" id="gender" name="gender"><br><br>
+            Hobbies1: <input type="checkbox" id="hobby1" name="hobbies1" value="Swimming">
+            <label for="hobby1">Swimming</label><br><br>
+            Hobbies2: <input type="checkbox" id="hobby2" name="hobbies2" value="Dancing">
+            <label for="hobby2">Dancing</label><br><br>
+            Hobbies3: <input type="checkbox" id="hobby3" name="hobbies3" value="Singing">
+            <label for="hobby3">Singing</label><br><br>
+
+
+            <button onclick="print()" type="Submit">Submit</button>
+        </div>
+        <p id="second"></p>
+        </form>
+    </body>
+    <script>
+function print()
+{
+        var firstname =document.getElementById("fname").value;
+        var lastname=document.getElementById("lname").value;
+        var email_address=document.getElementById("email").value;
+        var date_of_birth=document.getElementById("dob").value;
+    var phone_number = document.getElementById("Pno").value;
+    var gender = document.getElementById("gender").value;
+    var Hobbies1 = document.getElementById("hobbies1").value;
+    var Hobbies2 = document.getElementById("hobbies2").value;
+    var Hobbies3 = document.getElementById("hobbies3").value;
+        document.getElementById("first").innerHTML="FirstName: "+firstname+ "<br><br>"+
+         "LastName: "+lastname+"<br><br>"+"Email: "+email_address+"<br><br>"+"Date of Birth: "
+            + date_of_birth + "<br><br>" + "Phone Number: " + phone_number + "<br><br>" + "Gender: " + gender + "<br><br>" + "Hobbies1:" + Hobbies1 + "<br><br>" + "Hobbies2:" + Hobbies2 + "<br><br>" + "Hobbies3:" + Hobbies3 + "<br><br>";
+    form.Submit();
+}
+    </script>
+</head>
+</html>
